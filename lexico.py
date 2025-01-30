@@ -13,7 +13,10 @@ def analizador_lexico(texto, lista, rules):
                 pos = new_rules[i]
             if pos == 100:
                 pos = 0
-                print(dic.tipo[new_rules["current_line"]])
+                if dic.tipo[new_rules["current_line"]] == "":
+                    pass
+                else:
+                    print(dic.tipo[new_rules["current_line"]])
                 continue
             if pos == 500:
                 print("Error 50X. Revisa tu syntaxis.")

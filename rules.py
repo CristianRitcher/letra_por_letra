@@ -66,6 +66,7 @@ rules = {
     "z": 0,
     "$": 0,
     ".": 0,
+    ",": 0,
     "'": 0,
     ":": 0,
     ";": 0,
@@ -89,7 +90,7 @@ rules = {
     "]": 0,
     " ": 0,
     "\n": 0,
-    "\t": 0,
+    "\t": 0
 }
 
 archivo = "tabla_lexica.csv"
@@ -97,9 +98,9 @@ archivo = "tabla_lexica.csv"
 with open(archivo, newline='', encoding="utf-8") as f:
     reader = csv.reader(f)
     data = list(reader)
-
+print(data[0][0:30])
 def reglas_update(tipo, reglas, lista):
-    nueva_lista = lista[tipo+1][0:29]
+    nueva_lista = lista[tipo+1][0:30]
     reglas["current_line"] = tipo
     num = int(nueva_lista[1])
     pal = int(nueva_lista[2])
