@@ -19,8 +19,8 @@ def analizador_lexico(texto, lista, rules):
                     print(dic.tipo[new_rules["current_line"]])
                 continue
             if pos == 500:
-                print("Error 50X. Revisa tu syntaxis.")
-                break
+                print(dic.errores[new_rules["current_line"]])
+                return False
             break
 
 texto_prueba = lpl.texto("ejemplo.txt")

@@ -98,7 +98,7 @@ archivo = "tabla_lexica.csv"
 with open(archivo, newline='', encoding="utf-8") as f:
     reader = csv.reader(f)
     data = list(reader)
-print(data[0][0:30])
+
 def reglas_update(tipo, reglas, lista):
     nueva_lista = lista[tipo+1][0:30]
     reglas["current_line"] = tipo

@@ -46,6 +46,54 @@ tipo = {
     44: ""
 }
 
+errores = {
+    0: "error inicial",
+    1: "error Integral",
+    2: "error Integral",
+    3: "error Float",
+    4: "error String",
+    5: "error String",
+    6: "error Variable",
+    7: "error Variable",
+    8: "error Coma",
+    9: "error igual",
+    10: "error Igual a",
+    11: "error Dos punto",
+    12: "error Punto y coma",
+    13: "error Menos que",
+    14: "error Menos o igual que",
+    15: "error Más que",
+    16: "error Más o igual que",
+    17: "error No",
+    18: "error No igual que",
+    19: "error Igual que",
+    20: "error Igual que",
+    21: "error Suma",
+    22: "error Sumar a",
+    23: "error Resta",
+    24: "error Restar a",
+    25: "error Multiplicacion",
+    26: "error Multiplicar a",
+    27: "error División",
+    28: "errorDividir a",
+    29: "error Comentario",
+    30: "error Comentario",
+    31: "error Comentario",
+    32: "error OR",
+    33: "error OR",
+    34: "error AND",
+    35: "error AND",
+    36: "error Parentesis inicio",
+    37: "error Parentesis final",
+    38: "error Llave inicio",
+    39: "error Llave final",
+    40: "error Corchete inicio",
+    41: "error Corchete final",
+    42: "error palabra reservada",
+    43: "error Palabra reservada",
+    44: "error espacio"
+}
+
 palabras_reservadas = {
 
 }

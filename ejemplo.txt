@@ -1,2 +1,8 @@
-$uno .= 2;
-2 + 2 .= 4 
+¡init
+$uno := 2;
+2 + 2.199 > 4 
+/* este es un super comentario // *
+$lista := [2, 2, 'hola'];
+if 'hola' == $lista[2] {
+}
+end! 
