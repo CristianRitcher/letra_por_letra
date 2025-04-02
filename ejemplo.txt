@@ -1,8 +1,1 @@
-¡init
-$uno := 2;
-2 + 2.199 > 4 
-/* este es un super comentario // *
-$lista := [2, 2, 'hola'];
-if 'hola' == $lista[2] {
-}
-end! 
+!init $cero ; { $uno := 11 ; $dos := 'hola' ; $uno := 12 ; $tres := true } !end $ 

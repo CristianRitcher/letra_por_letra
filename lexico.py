@@ -1,8 +1,12 @@
 import rules as rl
-import letra_por_letra as lpl
 import diccionario as dic
 
+lexico_lista = []
 
+def texto(nombre_archivo):
+    with open(nombre_archivo, "r", encoding="utf-8") as archivo:
+        contenido = archivo.read()
+    return contenido
 
 def analizador_lexico(texto, lista, rules):
     pos = 0
@@ -16,14 +20,14 @@ def analizador_lexico(texto, lista, rules):
                 if dic.tipo[new_rules["current_line"]] == "":
                     pass
                 else:
-                    print(dic.tipo[new_rules["current_line"]])
+                    lexico_lista.append(dic.tipo[new_rules["current_line"]])
                 continue
             if pos == 500:
                 print(dic.errores[new_rules["current_line"]])
                 return False
             break
+        (lexico_lista)
+    return lexico_lista
 
-texto_prueba = lpl.texto("ejemplo.txt")
-
-analizador_lexico(texto_prueba, rl.data, rl.rules)
+analizador_lexico(texto("ejemplo.txt"), rl.data, rl.rules)
 
